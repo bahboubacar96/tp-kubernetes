@@ -13,5 +13,5 @@ COPY motd-api.py /app/
 EXPOSE 8080
 
 # Commande pour exécuter le microservice
-CMD ["python", "motd-api.py"]
+CMD ["python3", "motd-api.py"]
 
