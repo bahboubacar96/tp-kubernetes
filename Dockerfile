@@ -1,5 +1,7 @@
 # Utilisez une image de base légère, par exemple, Alpine
-FROM alpine:latest
+FROM python:3.9-alpine
+
+RUN pip install flask
 
 # Définissez le répertoire de travail
 WORKDIR /app
@@ -12,3 +14,4 @@ EXPOSE 8080
 
 # Commande pour exécuter le microservice
 CMD ["python", "motd-api.py"]
+
